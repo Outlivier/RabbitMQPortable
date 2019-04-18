@@ -42,21 +42,21 @@ The management wrapper are a ultra-simplified small substract of [RabbitMQTools]
 * The MSVCR120.dll dll seems necessary for Erlang. It seems to be installed in Windows 10, but is not available in Windows 2012 R2.  
 If Erlang requires the dll, it will be necessary to install Visual C++ Redistributable Packages for Visual Studio 2013 : `choco install vcredist2013`.
 * PowerShell 5.0+ with .net FrameWork 4.5 is required because of .net framework bug on encoding '/' inside an URL : [stackoverflow : Mysticism: Invoke-WebRequest working only via ISE](https://stackoverflow.com/questions/41937964/mysticism-invoke-webrequest-working-only-via-ise/42533778#42533778).
-
-
+* Doesn't work inside PowerShell ISE, but OK with VSCode.
 
 # Dev #
 
 ## Clone ##
 
-TODO
-
-After cloning, execute `\build\Get-Modules.ps1` to download required modules to `\lib` directory.
+After cloning :
+* Execute `\build\Get-Modules.ps1` to download required modules to `\lib` directory.
+* Download corresponding Release archive in [releases page](https://github.com/Outlivier/RabbitMQPortable/releases) and copy folders `erlang` and `rabbitmq` to `\dev\erlang` and `\dev\rabbitmq`.
 
 ## Deployment ##
 
 * Execute `\build\Invoke-ScriptAnalyzer.ps1` and check that there are no more problems.
 * Execute `\build\Publish.ps1`.
+* Copy archive inside the [latest release](https://github.com/Outlivier/RabbitMQPortable/releases).
 
 ## Update RabbitMQ Version ##
 
@@ -74,7 +74,7 @@ After cloning, execute `\build\Get-Modules.ps1` to download required modules to 
 ## TODO ##
 
 * Set environment variable for RabbitMQ configuration file path in order to change ports number.
-
+* Unit tests with pester.
 
 
 # References #
