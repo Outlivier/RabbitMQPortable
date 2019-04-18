@@ -1,0 +1,14 @@
+*.lnk
+*.user
+*.suo
+Thumbs.db
+
+/deploy/
+/dev/erlang
+/dev/rabbitmq
+/dev/rabbitmq-data
+/lib/7Zip4Powershell
+/lib/Pester
+/lib/PSScriptAnalyzer
+
+###——————————END——————————###
