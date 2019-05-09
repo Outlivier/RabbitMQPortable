@@ -4,7 +4,7 @@
 RootModule = 'RabbitMQPortable.psm1'
 
 # Numéro de version de ce module.
-ModuleVersion = '0.1.0'
+ModuleVersion = '0.1.1'
 
 # Éditions PS prises en charge
 # CompatiblePSEditions = @()
