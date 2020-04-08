@@ -14,7 +14,7 @@
 .PARAMETER Tags
 	Comma-separated list of user tags.
 .EXAMPLE
-	PS C:\>Add-MQUser -Name "Admin" -NewPassword "p4ssw0rd" -Tag "administrator"
+	PS C:\>Add-MQUser -Name "Admin" -Password "p4ssw0rd" -Tag "administrator"
 .LINK
 	https://www.rabbitmq.com/management.html : RabbitMQ Management plugin Help.
 .LINK
